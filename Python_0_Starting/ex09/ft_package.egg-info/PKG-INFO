@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ft-package
+Version: 0.0.1
+Summary: A sample test package
+Home-page: https://github.com/iidkhebb/ft_package
+Author: iidkhebb
+Author-email: test@42.fr
+License: MIT
+License-File: LICENSE
