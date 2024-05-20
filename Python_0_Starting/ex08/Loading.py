@@ -22,10 +22,12 @@ def ft_tqdm(lst):
         speed = i / elapsed_time if elapsed_time > 0 else 0
         bar_length = 50
         filled_length = int(bar_length * progress / 100)
-        bar = '█' * filled_length + '-' * (bar_length - filled_length)
+        bar = "█" * filled_length + "-" * (bar_length - filled_length)
         eta = (total - i) / speed if speed > 0 else 0
         eta_formatted = str(datetime.timedelta(seconds=int(eta)))
-        sys.stdout.write(f'\r{progress:.0f}% |{bar}| {i}/{total} '
-                         f'[{eta_formatted}, {speed:.2f} it/s]')
+        sys.stdout.write(
+            f"\r{progress:.0f}% |{bar}| {i}/{total} "
+            f"[{eta_formatted}, {speed:.2f} it/s]"
+        )
         yield item
     print()

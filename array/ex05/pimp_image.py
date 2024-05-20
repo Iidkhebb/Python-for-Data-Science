@@ -1,11 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def display_image(image_array):
     # Display the image
     plt.imshow(image_array)
-    plt.axis('off')  # Turn off axis
+    plt.axis("off")  # Turn off axis
     plt.show()
+
 
 def ft_invert(array) -> np.ndarray:
     """
@@ -15,6 +17,7 @@ def ft_invert(array) -> np.ndarray:
     display_image(inverted_image)
     return inverted_image
 
+
 def ft_red(array) -> np.ndarray:
     # Keep only the red channel, setting green and blue channels to 0
     red_only = np.zeros_like(array)
@@ -22,18 +25,21 @@ def ft_red(array) -> np.ndarray:
     display_image(red_only)
     return red_only
 
+
 def ft_green(array) -> np.ndarray:
-    green_channel = array[:, :, 1]
+    array[:, :, 1]
     array[:, :, 0] = 0
     array[:, :, 2] = 0
     display_image(array)
     return array
+
 
 def ft_blue(array) -> np.ndarray:
     red_green_zeroed = array.copy()
     red_green_zeroed[:, :, :2] = 0  # Zero out red and green channels
     display_image(red_green_zeroed)
     return red_green_zeroed
+
 
 def ft_grey(array) -> np.ndarray:
     # Calculate luminance using weighted sum

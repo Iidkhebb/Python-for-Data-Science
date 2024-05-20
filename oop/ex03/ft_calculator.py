@@ -1,7 +1,7 @@
 class calculator:
     def __init__(self, vector):
         self.vector = vector
-    
+
     def set_vector(self, new_vector):
         self.vector = new_vector
 

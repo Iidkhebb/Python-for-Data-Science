@@ -1,9 +1,10 @@
-from abc import ABC, abstractmethod
 from S1E9 import Character
+
 
 class Baratheon(Character):
     """
-    A class representing a member of House Baratheon, inheriting from Character.
+    A class representing a member of House
+    Baratheon, inheriting from Character.
     """
 
     def __init__(self, first_name: str, is_alive: bool = True):
@@ -11,7 +12,7 @@ class Baratheon(Character):
         self.family_name = "Baratheon"
         self.eyes = "brown"
         self.hairs = "dark"
-    
+
     family_name = "Baratheon"
     eyes = "brown"
     hairs = "dark"
@@ -26,7 +27,8 @@ class Baratheon(Character):
         """
         Return a string representation of the character.
         """
-        return f"{self.first_name} {self.family_name} with {self.eyes} eyes and {self.hairs} hair"
+        return f"{self.first_name} {self.family_name} with\
+        {self.eyes} eyes and {self.hairs} hair"
 
     def __repr__(self):
         """
@@ -37,7 +39,8 @@ class Baratheon(Character):
 
 class Lannister(Character):
     """
-    A class representing a member of House Lannister, inheriting from Character.
+    A class representing a member of House Lannister,
+    inheriting from Character.
     """
 
     def __init__(self, first_name: str, is_alive: bool = True):
@@ -56,7 +59,8 @@ class Lannister(Character):
         """
         Return a string representation of the character.
         """
-        return f"{self.first_name} {self.family_name} with {self.eyes} eyes and {self.hairs} hair"
+        return f"{self.first_name} {self.family_name}\
+        with {self.eyes} eyes and {self.hairs} hair"
 
     def __repr__(self):
         """
@@ -68,10 +72,11 @@ class Lannister(Character):
     def create_lannister(cls, first_name: str, is_alive: bool = True):
         """
         Class method to create a Lannister character.
-        
+
         Args:
             first_name (str): The first name of the character.
-            is_alive (bool, optional): The health state of the character. Defaults to True.
+            is_alive (bool, optional): The health state of the
+            character. Defaults to True.
 
         Returns:
             Lannister: A new instance of the Lannister class.

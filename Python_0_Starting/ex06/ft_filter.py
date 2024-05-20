@@ -22,10 +22,10 @@ def main():
 
     # Filter odd numbers
     odd_numbers = ft_filter(lambda x: x % 2 != 0, numbers)
-    print(list(odd_numbers))   # Output: [1, 3, 5, 7, 9]
+    print(list(odd_numbers))  # Output: [1, 3, 5, 7, 9]
 
     # Filter truthy values (function is None)
-    truthy_values = ft_filter(None, [0, '', None, False, 1, 'Hello', True])
+    truthy_values = ft_filter(None, [0, "", None, False, 1, "Hello", True])
     print(list(truthy_values))  # Output: [1, 'Hello', True]
 
 

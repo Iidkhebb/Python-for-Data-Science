@@ -16,8 +16,7 @@ def character_stats(text):
 
     upper_count = sum(1 for char in text if char.isupper())
     lower_count = sum(1 for char in text if char.islower())
-    punctuation_count = sum(
-        1 for char in text if char in '.,;:!?')
+    punctuation_count = sum(1 for char in text if char in ".,;:!?")
     digit_count = sum(1 for char in text if char.isdigit())
     space_count = sum(1 for char in text if char.isspace())
 

@@ -12,8 +12,9 @@ def filter_string(s, n):
     Returns:
     - A list of words from s that have a length greater than n.
     """
-    assert isinstance(s, str) and isinstance(n, int), \
-        "AssertionError: the arguments are bad"
+    assert isinstance(s, str) and isinstance(
+        n, int
+    ), "AssertionError: the arguments are bad"
 
     return [word for word in s.split() if len(word) > n]
 
@@ -26,7 +27,7 @@ def main(args):
         result = filter_string(s, n)
         print(result)
     except (AssertionError, ValueError):
-        print('AssertionError: the arguments are bad')
+        print("AssertionError: the arguments are bad")
 
 
 if __name__ == "__main__":
